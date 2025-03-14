@@ -1,0 +1,14 @@
+{"time":"2025-03-14T19:35:30.491712014+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_193530-ja40gl8b/logs/debug-core.log"}
+{"time":"2025-03-14T19:35:30.603225367+08:00","level":"INFO","msg":"created new stream","id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:30.603265045+08:00","level":"INFO","msg":"stream: started","id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:30.603290539+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:30.603319768+08:00","level":"INFO","msg":"handler: started","stream_id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:30.603320953+08:00","level":"INFO","msg":"sender: started","stream_id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:30.611513694+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T19:35:34.617894703+08:00","level":"INFO","msg":"stream: closing","id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:34.617961197+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T19:35:34.618888603+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T19:35:34.61911773+08:00","level":"INFO","msg":"handler: closed","stream_id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:34.619134535+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:34.619164391+08:00","level":"INFO","msg":"sender: closed","stream_id":"ja40gl8b"}
+{"time":"2025-03-14T19:35:34.619335229+08:00","level":"INFO","msg":"stream: closed","id":"ja40gl8b"}

@@ -5,10 +5,14 @@ import pandas as pd
 import shutil
 
 # 设定路径
-CSV_PATH = "/opt/data/private/data/HMDB51/hmdb51_splits.csv"  # CSV 文件路径
-ROOT_FOLDER = "/opt/data/private/video_distillation-old/distill_utils/data/HMDB51/jpegs_112"  # RGB 视频文件夹的根目录
-OUTPUT_FOLDER = "/opt/data/private/data/HMDB51/jpegs_112"  # 关键帧输出目录
+CSV_PATH = "/root/autodl-tmp/Data/HMDB51/hmdb51_splits.csv"  # CSV 文件路径
+ROOT_FOLDER = "/root/autodl-tmp/Data/HMDB51/jpegs_112"  # RGB 视频文件夹的根目录
+OUTPUT_FOLDER = "/root/autodl-tmp/Distilled_Data/HMDB51/jpegs_112"  # 关键帧输出目录
 FLOW_THRESHOLD = 1.2  # 固定光流阈值
+
+
+a = 0
+b = 0
 
 # 读取 CSV 文件，分类 train 和 test
 df = pd.read_csv(CSV_PATH)
@@ -68,8 +72,6 @@ def copy_all_images(image_folder, output_folder):
 
     print(f"复制 {len(os.listdir(image_folder))} 张图片: {image_folder}")
 
-a = 0
-b = 0
 
 # 处理 train 数据（提取关键帧）
 for idx, folder in enumerate(train_folders, 1):

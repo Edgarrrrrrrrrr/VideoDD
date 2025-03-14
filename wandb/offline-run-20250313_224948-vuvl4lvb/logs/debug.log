@@ -1,0 +1,23 @@
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_setup.py:_flush():67] Configure stats pid to 590250
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_setup.py:_flush():67] Loading settings from /root/.config/wandb/settings
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_setup.py:_flush():67] Loading settings from /root/autodl-tmp/VideoDD/wandb/settings
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_init.py:setup_run_log_directory():647] Logging user logs to /root/autodl-tmp/VideoDD/wandb/offline-run-20250313_224948-vuvl4lvb/logs/debug.log
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to /root/autodl-tmp/VideoDD/wandb/offline-run-20250313_224948-vuvl4lvb/logs/debug-internal.log
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_init.py:init():761] calling init triggers
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'dataset': 'HMDB51', 'method': 'CF', 'model': 'ConvNet3D', 'data_path': '/root/autodl-tmp/Data', 'Iteration': 5000, 'eval_it': 500, 'eval_mode': 'SS', 'batch_syn': None, 'ipc': 1, 'frames': 16, 'lr_teacher': 0.001, 'init': 'real', 'lr_video': 30.0, 'sampling_net': 0, 'lr_sampling_net': 0.01, 'alpha_for_loss': 0.5, 'beta_for_loss': 0.5, 'iter_calib': 0, 'calib_weight': 1, 'num_freqs': 4096, 'outer_loop': None, 'inner_loop': None, 'num_eval': 5, 'epoch_eval_train': 500, 'lr_net': 0.01, 'lr_lr': 1e-05, 'train_lr': False, 'batch_real': 64, 'batch_train': 256, 'expert_epochs': 3, 'syn_steps': 64, 'max_start_epoch': 25, 'dis_metric': 'ours', 'buffer_path': None, 'num_workers': 4, 'preload': True, 'save_path': './logged_files', 'device': 'cuda', '_wandb': {}}
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_init.py:init():784] starting backend
+2025-03-13 22:49:48,806 INFO    MainThread:590250 [wandb_init.py:init():788] sending inform_init request
+2025-03-13 22:49:48,813 INFO    MainThread:590250 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-03-13 22:49:48,813 INFO    MainThread:590250 [wandb_init.py:init():798] backend started and connected
+2025-03-13 22:49:48,821 INFO    MainThread:590250 [wandb_init.py:init():891] updated telemetry
+2025-03-13 22:49:48,825 INFO    MainThread:590250 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-13 22:49:48,937 INFO    MainThread:590250 [wandb_init.py:init():990] starting run threads in backend
+2025-03-13 22:49:49,089 INFO    MainThread:590250 [wandb_run.py:_console_start():2375] atexit reg
+2025-03-13 22:49:49,090 INFO    MainThread:590250 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-03-13 22:49:49,090 INFO    MainThread:590250 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-03-13 22:49:49,090 INFO    MainThread:590250 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-03-13 22:49:49,093 INFO    MainThread:590250 [wandb_init.py:init():1032] run started, returning control to user process
+2025-03-13 22:52:57,159 INFO    MsgRouterThr:590250 [mailbox.py:close():129] Closing mailbox, abandoning 0 handles.

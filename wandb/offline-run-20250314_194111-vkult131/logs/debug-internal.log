@@ -1,0 +1,14 @@
+{"time":"2025-03-14T19:41:11.057341897+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_194111-vkult131/logs/debug-core.log"}
+{"time":"2025-03-14T19:41:11.170143699+08:00","level":"INFO","msg":"created new stream","id":"vkult131"}
+{"time":"2025-03-14T19:41:11.170198403+08:00","level":"INFO","msg":"stream: started","id":"vkult131"}
+{"time":"2025-03-14T19:41:11.170254411+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"vkult131"}
+{"time":"2025-03-14T19:41:11.170260485+08:00","level":"INFO","msg":"handler: started","stream_id":"vkult131"}
+{"time":"2025-03-14T19:41:11.170303595+08:00","level":"INFO","msg":"sender: started","stream_id":"vkult131"}
+{"time":"2025-03-14T19:41:11.176751249+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T19:41:18.186372067+08:00","level":"INFO","msg":"stream: closing","id":"vkult131"}
+{"time":"2025-03-14T19:41:18.186431267+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T19:41:18.187354864+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T19:41:18.187523953+08:00","level":"INFO","msg":"handler: closed","stream_id":"vkult131"}
+{"time":"2025-03-14T19:41:18.187532345+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vkult131"}
+{"time":"2025-03-14T19:41:18.187574993+08:00","level":"INFO","msg":"sender: closed","stream_id":"vkult131"}
+{"time":"2025-03-14T19:41:18.187715079+08:00","level":"INFO","msg":"stream: closed","id":"vkult131"}

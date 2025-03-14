@@ -14,13 +14,14 @@ CUDA_VISIBLE_DEVICES=${GPU} python distill_baseline.py \
 --init real \
 --lr_img ${LR} \
 --lr_net 0.01 \
---Iteration 1000 \
+--Iteration 6000 \
 --model ConvNet3D \
 --eval_mode SS \
 --eval_it 500 \
 --batch_real 64 \
 --num_workers 4 \
---data_path  /opt/data/private/video_distillation-old/distill_utils/data/
+--preload  \
+--data_path  "/root/autodl-tmp/Data"
 #--Iteration 5000 \
-#--preload  \
+
 #--epoch_eval_train 500 \

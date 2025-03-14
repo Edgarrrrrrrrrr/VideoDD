@@ -1,0 +1,14 @@
+{"time":"2025-03-12T23:39:46.233114119+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250312_233946-xry4rjmt/logs/debug-core.log"}
+{"time":"2025-03-12T23:39:46.344103073+08:00","level":"INFO","msg":"created new stream","id":"xry4rjmt"}
+{"time":"2025-03-12T23:39:46.344134621+08:00","level":"INFO","msg":"stream: started","id":"xry4rjmt"}
+{"time":"2025-03-12T23:39:46.34421381+08:00","level":"INFO","msg":"sender: started","stream_id":"xry4rjmt"}
+{"time":"2025-03-12T23:39:46.344206802+08:00","level":"INFO","msg":"handler: started","stream_id":"xry4rjmt"}
+{"time":"2025-03-12T23:39:46.344204068+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xry4rjmt"}
+{"time":"2025-03-12T23:39:46.350410396+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-12T23:40:25.389817969+08:00","level":"INFO","msg":"stream: closing","id":"xry4rjmt"}
+{"time":"2025-03-12T23:40:25.389883938+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-12T23:40:25.390953316+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-12T23:40:25.391096679+08:00","level":"INFO","msg":"handler: closed","stream_id":"xry4rjmt"}
+{"time":"2025-03-12T23:40:25.391110475+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xry4rjmt"}
+{"time":"2025-03-12T23:40:25.391120979+08:00","level":"INFO","msg":"sender: closed","stream_id":"xry4rjmt"}
+{"time":"2025-03-12T23:40:25.391240757+08:00","level":"INFO","msg":"stream: closed","id":"xry4rjmt"}

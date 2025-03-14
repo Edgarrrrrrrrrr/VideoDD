@@ -1,0 +1,15 @@
+{"time":"2025-03-13T14:49:04.858051006+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_144904-7cqeleq7/logs/debug-core.log"}
+{"time":"2025-03-13T14:49:04.971256444+08:00","level":"INFO","msg":"created new stream","id":"7cqeleq7"}
+{"time":"2025-03-13T14:49:04.971290473+08:00","level":"INFO","msg":"stream: started","id":"7cqeleq7"}
+{"time":"2025-03-13T14:49:04.971320451+08:00","level":"INFO","msg":"sender: started","stream_id":"7cqeleq7"}
+{"time":"2025-03-13T14:49:04.971312761+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"7cqeleq7"}
+{"time":"2025-03-13T14:49:04.971375604+08:00","level":"INFO","msg":"handler: started","stream_id":"7cqeleq7"}
+{"time":"2025-03-13T14:49:04.976572566+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T14:59:26.861630507+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T14:59:26.862370808+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T14:59:26.8632307+08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-03-13T14:59:26.865979152+08:00","level":"INFO","msg":"stream: closing","id":"7cqeleq7"}
+{"time":"2025-03-13T14:59:26.865993014+08:00","level":"INFO","msg":"handler: closed","stream_id":"7cqeleq7"}
+{"time":"2025-03-13T14:59:26.865999234+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7cqeleq7"}
+{"time":"2025-03-13T14:59:26.866017224+08:00","level":"INFO","msg":"sender: closed","stream_id":"7cqeleq7"}
+{"time":"2025-03-13T14:59:26.866072313+08:00","level":"INFO","msg":"stream: closed","id":"7cqeleq7"}

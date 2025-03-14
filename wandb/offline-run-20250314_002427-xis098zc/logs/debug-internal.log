@@ -1,0 +1,14 @@
+{"time":"2025-03-14T00:24:27.205223536+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_002427-xis098zc/logs/debug-core.log"}
+{"time":"2025-03-14T00:24:27.318697802+08:00","level":"INFO","msg":"created new stream","id":"xis098zc"}
+{"time":"2025-03-14T00:24:27.318804638+08:00","level":"INFO","msg":"stream: started","id":"xis098zc"}
+{"time":"2025-03-14T00:24:27.318824385+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xis098zc"}
+{"time":"2025-03-14T00:24:27.318847103+08:00","level":"INFO","msg":"handler: started","stream_id":"xis098zc"}
+{"time":"2025-03-14T00:24:27.31886031+08:00","level":"INFO","msg":"sender: started","stream_id":"xis098zc"}
+{"time":"2025-03-14T00:24:27.324105989+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T00:24:30.328315411+08:00","level":"INFO","msg":"stream: closing","id":"xis098zc"}
+{"time":"2025-03-14T00:24:30.32837523+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T00:24:30.329542474+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T00:24:30.329797493+08:00","level":"INFO","msg":"handler: closed","stream_id":"xis098zc"}
+{"time":"2025-03-14T00:24:30.329833533+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xis098zc"}
+{"time":"2025-03-14T00:24:30.329896362+08:00","level":"INFO","msg":"sender: closed","stream_id":"xis098zc"}
+{"time":"2025-03-14T00:24:30.329947393+08:00","level":"INFO","msg":"stream: closed","id":"xis098zc"}

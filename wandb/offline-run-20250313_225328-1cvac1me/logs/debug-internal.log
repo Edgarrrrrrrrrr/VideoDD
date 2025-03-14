@@ -1,0 +1,14 @@
+{"time":"2025-03-13T22:53:28.096001706+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_225328-1cvac1me/logs/debug-core.log"}
+{"time":"2025-03-13T22:53:28.207015967+08:00","level":"INFO","msg":"created new stream","id":"1cvac1me"}
+{"time":"2025-03-13T22:53:28.207068083+08:00","level":"INFO","msg":"stream: started","id":"1cvac1me"}
+{"time":"2025-03-13T22:53:28.207122397+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"1cvac1me"}
+{"time":"2025-03-13T22:53:28.207137878+08:00","level":"INFO","msg":"handler: started","stream_id":"1cvac1me"}
+{"time":"2025-03-13T22:53:28.207141808+08:00","level":"INFO","msg":"sender: started","stream_id":"1cvac1me"}
+{"time":"2025-03-13T22:53:28.215578059+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T00:19:55.132325444+08:00","level":"INFO","msg":"stream: closing","id":"1cvac1me"}
+{"time":"2025-03-14T00:19:55.132418207+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T00:19:55.133539319+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T00:19:55.133798246+08:00","level":"INFO","msg":"handler: closed","stream_id":"1cvac1me"}
+{"time":"2025-03-14T00:19:55.133819067+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"1cvac1me"}
+{"time":"2025-03-14T00:19:55.133865601+08:00","level":"INFO","msg":"sender: closed","stream_id":"1cvac1me"}
+{"time":"2025-03-14T00:19:55.134054192+08:00","level":"INFO","msg":"stream: closed","id":"1cvac1me"}

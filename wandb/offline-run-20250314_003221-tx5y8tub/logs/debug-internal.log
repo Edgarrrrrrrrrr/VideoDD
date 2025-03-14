@@ -1,0 +1,14 @@
+{"time":"2025-03-14T00:32:21.246926555+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_003221-tx5y8tub/logs/debug-core.log"}
+{"time":"2025-03-14T00:32:21.357250684+08:00","level":"INFO","msg":"created new stream","id":"tx5y8tub"}
+{"time":"2025-03-14T00:32:21.357294759+08:00","level":"INFO","msg":"stream: started","id":"tx5y8tub"}
+{"time":"2025-03-14T00:32:21.357354827+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"tx5y8tub"}
+{"time":"2025-03-14T00:32:21.357370902+08:00","level":"INFO","msg":"handler: started","stream_id":"tx5y8tub"}
+{"time":"2025-03-14T00:32:21.357369786+08:00","level":"INFO","msg":"sender: started","stream_id":"tx5y8tub"}
+{"time":"2025-03-14T00:32:21.365554132+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T00:34:57.527852497+08:00","level":"INFO","msg":"stream: closing","id":"tx5y8tub"}
+{"time":"2025-03-14T00:34:57.527903398+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T00:34:57.529154495+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T00:34:57.529418955+08:00","level":"INFO","msg":"handler: closed","stream_id":"tx5y8tub"}
+{"time":"2025-03-14T00:34:57.529432757+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tx5y8tub"}
+{"time":"2025-03-14T00:34:57.529461843+08:00","level":"INFO","msg":"sender: closed","stream_id":"tx5y8tub"}
+{"time":"2025-03-14T00:34:57.529663197+08:00","level":"INFO","msg":"stream: closed","id":"tx5y8tub"}

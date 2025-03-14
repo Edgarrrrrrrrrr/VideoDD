@@ -1,0 +1,14 @@
+{"time":"2025-03-14T19:33:24.67949815+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_193324-dgms5h1n/logs/debug-core.log"}
+{"time":"2025-03-14T19:33:24.791409241+08:00","level":"INFO","msg":"created new stream","id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:24.791458556+08:00","level":"INFO","msg":"stream: started","id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:24.791517845+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:24.791532552+08:00","level":"INFO","msg":"sender: started","stream_id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:24.791541597+08:00","level":"INFO","msg":"handler: started","stream_id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:24.799174868+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T19:33:28.805111317+08:00","level":"INFO","msg":"stream: closing","id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:28.805170009+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T19:33:28.806158171+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T19:33:28.806425991+08:00","level":"INFO","msg":"handler: closed","stream_id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:28.806443032+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:28.806473496+08:00","level":"INFO","msg":"sender: closed","stream_id":"dgms5h1n"}
+{"time":"2025-03-14T19:33:28.806614714+08:00","level":"INFO","msg":"stream: closed","id":"dgms5h1n"}

@@ -1,0 +1,14 @@
+{"time":"2025-03-13T22:49:48.822067669+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_224948-vuvl4lvb/logs/debug-core.log"}
+{"time":"2025-03-13T22:49:48.932679302+08:00","level":"INFO","msg":"created new stream","id":"vuvl4lvb"}
+{"time":"2025-03-13T22:49:48.932715362+08:00","level":"INFO","msg":"stream: started","id":"vuvl4lvb"}
+{"time":"2025-03-13T22:49:48.932796159+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"vuvl4lvb"}
+{"time":"2025-03-13T22:49:48.932809798+08:00","level":"INFO","msg":"sender: started","stream_id":"vuvl4lvb"}
+{"time":"2025-03-13T22:49:48.932921367+08:00","level":"INFO","msg":"handler: started","stream_id":"vuvl4lvb"}
+{"time":"2025-03-13T22:49:48.94230442+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T22:52:57.16088411+08:00","level":"INFO","msg":"stream: closing","id":"vuvl4lvb"}
+{"time":"2025-03-13T22:52:57.160947499+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T22:52:57.162155827+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T22:52:57.162384925+08:00","level":"INFO","msg":"handler: closed","stream_id":"vuvl4lvb"}
+{"time":"2025-03-13T22:52:57.16240515+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vuvl4lvb"}
+{"time":"2025-03-13T22:52:57.162480077+08:00","level":"INFO","msg":"sender: closed","stream_id":"vuvl4lvb"}
+{"time":"2025-03-13T22:52:57.162657652+08:00","level":"INFO","msg":"stream: closed","id":"vuvl4lvb"}

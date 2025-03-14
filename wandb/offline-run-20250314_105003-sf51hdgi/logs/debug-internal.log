@@ -1,0 +1,14 @@
+{"time":"2025-03-14T10:50:03.469239953+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_105003-sf51hdgi/logs/debug-core.log"}
+{"time":"2025-03-14T10:50:03.579872484+08:00","level":"INFO","msg":"created new stream","id":"sf51hdgi"}
+{"time":"2025-03-14T10:50:03.579954072+08:00","level":"INFO","msg":"stream: started","id":"sf51hdgi"}
+{"time":"2025-03-14T10:50:03.579962356+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"sf51hdgi"}
+{"time":"2025-03-14T10:50:03.579987828+08:00","level":"INFO","msg":"sender: started","stream_id":"sf51hdgi"}
+{"time":"2025-03-14T10:50:03.580106108+08:00","level":"INFO","msg":"handler: started","stream_id":"sf51hdgi"}
+{"time":"2025-03-14T10:50:03.587507757+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T10:53:18.786618154+08:00","level":"INFO","msg":"stream: closing","id":"sf51hdgi"}
+{"time":"2025-03-14T10:53:18.786688205+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T10:53:18.787423607+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T10:53:18.78759225+08:00","level":"INFO","msg":"handler: closed","stream_id":"sf51hdgi"}
+{"time":"2025-03-14T10:53:18.787602266+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sf51hdgi"}
+{"time":"2025-03-14T10:53:18.787627136+08:00","level":"INFO","msg":"sender: closed","stream_id":"sf51hdgi"}
+{"time":"2025-03-14T10:53:18.787840798+08:00","level":"INFO","msg":"stream: closed","id":"sf51hdgi"}

@@ -1,0 +1,14 @@
+{"time":"2025-03-13T13:17:19.935987253+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_131719-v6uod5dk/logs/debug-core.log"}
+{"time":"2025-03-13T13:17:20.045757556+08:00","level":"INFO","msg":"created new stream","id":"v6uod5dk"}
+{"time":"2025-03-13T13:17:20.045803628+08:00","level":"INFO","msg":"stream: started","id":"v6uod5dk"}
+{"time":"2025-03-13T13:17:20.045839848+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"v6uod5dk"}
+{"time":"2025-03-13T13:17:20.045867699+08:00","level":"INFO","msg":"handler: started","stream_id":"v6uod5dk"}
+{"time":"2025-03-13T13:17:20.045897661+08:00","level":"INFO","msg":"sender: started","stream_id":"v6uod5dk"}
+{"time":"2025-03-13T13:17:20.052694678+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T13:26:25.613501033+08:00","level":"INFO","msg":"stream: closing","id":"v6uod5dk"}
+{"time":"2025-03-13T13:26:25.613580715+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T13:26:25.614715454+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T13:26:25.6149426+08:00","level":"INFO","msg":"handler: closed","stream_id":"v6uod5dk"}
+{"time":"2025-03-13T13:26:25.614956697+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"v6uod5dk"}
+{"time":"2025-03-13T13:26:25.614971559+08:00","level":"INFO","msg":"sender: closed","stream_id":"v6uod5dk"}
+{"time":"2025-03-13T13:26:25.615238564+08:00","level":"INFO","msg":"stream: closed","id":"v6uod5dk"}

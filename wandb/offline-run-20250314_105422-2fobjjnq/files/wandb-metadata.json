@@ -1,0 +1,74 @@
+{
+  "os": "Linux-5.15.0-97-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-03-14T02:54:22.171806Z",
+  "args": [
+    "--method",
+    "DM",
+    "--dataset",
+    "HMDB51",
+    "--ipc",
+    "1",
+    "--num_eval",
+    "5",
+    "--epoch_eval_train",
+    "200",
+    "--init",
+    "real",
+    "--lr_img",
+    "10",
+    "--lr_net",
+    "0.01",
+    "--Iteration",
+    "6000",
+    "--model",
+    "ConvNet3D",
+    "--eval_mode",
+    "SS",
+    "--eval_it",
+    "500",
+    "--batch_real",
+    "64",
+    "--num_workers",
+    "4",
+    "--preload",
+    "--data_path",
+    "/root/autodl-tmp/Data"
+  ],
+  "program": "/root/autodl-tmp/VideoDD/distill_baseline.py",
+  "codePath": "distill_baseline.py",
+  "git": {
+    "remote": "git@github.com:Edgarrrrrrrrrr/VideoDD.git",
+    "commit": "091e932059079f4e45478fe54332dfde90f3fa11"
+  },
+  "root": "/root/autodl-tmp/VideoDD",
+  "host": "autodl-container-e3624c865b-964e9096",
+  "executable": "/root/miniconda3/bin/python",
+  "codePathLocal": "distill_baseline.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "32212254720",
+      "used": "2034774016"
+    }
+  },
+  "memory": {
+    "total": "1081820225536"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.6"
+}

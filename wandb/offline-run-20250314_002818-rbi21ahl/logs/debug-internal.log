@@ -1,0 +1,14 @@
+{"time":"2025-03-14T00:28:18.301100126+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_002818-rbi21ahl/logs/debug-core.log"}
+{"time":"2025-03-14T00:28:18.410328788+08:00","level":"INFO","msg":"created new stream","id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:18.410361012+08:00","level":"INFO","msg":"stream: started","id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:18.4104094+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:18.410414456+08:00","level":"INFO","msg":"handler: started","stream_id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:18.410455878+08:00","level":"INFO","msg":"sender: started","stream_id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:18.417156623+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T00:28:21.42197031+08:00","level":"INFO","msg":"stream: closing","id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:21.422031618+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T00:28:21.42300906+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T00:28:21.423262111+08:00","level":"INFO","msg":"handler: closed","stream_id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:21.423287827+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:21.42335907+08:00","level":"INFO","msg":"sender: closed","stream_id":"rbi21ahl"}
+{"time":"2025-03-14T00:28:21.423473365+08:00","level":"INFO","msg":"stream: closed","id":"rbi21ahl"}

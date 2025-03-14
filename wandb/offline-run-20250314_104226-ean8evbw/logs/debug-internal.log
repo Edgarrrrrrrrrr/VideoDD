@@ -1,0 +1,14 @@
+{"time":"2025-03-14T10:42:26.305396388+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250314_104226-ean8evbw/logs/debug-core.log"}
+{"time":"2025-03-14T10:42:26.415817456+08:00","level":"INFO","msg":"created new stream","id":"ean8evbw"}
+{"time":"2025-03-14T10:42:26.415852618+08:00","level":"INFO","msg":"stream: started","id":"ean8evbw"}
+{"time":"2025-03-14T10:42:26.415901995+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ean8evbw"}
+{"time":"2025-03-14T10:42:26.415975944+08:00","level":"INFO","msg":"sender: started","stream_id":"ean8evbw"}
+{"time":"2025-03-14T10:42:26.415907144+08:00","level":"INFO","msg":"handler: started","stream_id":"ean8evbw"}
+{"time":"2025-03-14T10:42:26.425064633+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-14T10:48:57.832838666+08:00","level":"INFO","msg":"stream: closing","id":"ean8evbw"}
+{"time":"2025-03-14T10:48:57.832932808+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-14T10:48:57.83419137+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-14T10:48:57.83437975+08:00","level":"INFO","msg":"handler: closed","stream_id":"ean8evbw"}
+{"time":"2025-03-14T10:48:57.834390062+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ean8evbw"}
+{"time":"2025-03-14T10:48:57.834412796+08:00","level":"INFO","msg":"sender: closed","stream_id":"ean8evbw"}
+{"time":"2025-03-14T10:48:57.834681739+08:00","level":"INFO","msg":"stream: closed","id":"ean8evbw"}

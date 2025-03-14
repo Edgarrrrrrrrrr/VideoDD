@@ -1,0 +1,14 @@
+{"time":"2025-03-13T14:39:07.287751567+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_143907-pumtt6ov/logs/debug-core.log"}
+{"time":"2025-03-13T14:39:07.396507598+08:00","level":"INFO","msg":"created new stream","id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:07.396531109+08:00","level":"INFO","msg":"stream: started","id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:07.396591816+08:00","level":"INFO","msg":"sender: started","stream_id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:07.396588657+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:07.396656652+08:00","level":"INFO","msg":"handler: started","stream_id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:07.404707142+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T14:39:12.411960268+08:00","level":"INFO","msg":"stream: closing","id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:12.412047513+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T14:39:12.413090498+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T14:39:12.413240183+08:00","level":"INFO","msg":"handler: closed","stream_id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:12.413252949+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:12.413261401+08:00","level":"INFO","msg":"sender: closed","stream_id":"pumtt6ov"}
+{"time":"2025-03-13T14:39:12.413363642+08:00","level":"INFO","msg":"stream: closed","id":"pumtt6ov"}

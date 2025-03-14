@@ -1,0 +1,14 @@
+{"time":"2025-03-13T22:34:01.88036772+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_223401-bmhyi37c/logs/debug-core.log"}
+{"time":"2025-03-13T22:34:01.991408318+08:00","level":"INFO","msg":"created new stream","id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:01.991441832+08:00","level":"INFO","msg":"stream: started","id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:01.991488522+08:00","level":"INFO","msg":"handler: started","stream_id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:01.991500181+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:01.991532585+08:00","level":"INFO","msg":"sender: started","stream_id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:02.00125621+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T22:34:52.054252467+08:00","level":"INFO","msg":"stream: closing","id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:52.054314407+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T22:34:52.055298567+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T22:34:52.055480043+08:00","level":"INFO","msg":"handler: closed","stream_id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:52.055493451+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:52.055538023+08:00","level":"INFO","msg":"sender: closed","stream_id":"bmhyi37c"}
+{"time":"2025-03-13T22:34:52.055694709+08:00","level":"INFO","msg":"stream: closed","id":"bmhyi37c"}

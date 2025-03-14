@@ -1,0 +1,14 @@
+{"time":"2025-03-13T13:34:09.317775707+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/offline-run-20250313_133409-xessa82l/logs/debug-core.log"}
+{"time":"2025-03-13T13:34:09.429295588+08:00","level":"INFO","msg":"created new stream","id":"xessa82l"}
+{"time":"2025-03-13T13:34:09.429335289+08:00","level":"INFO","msg":"stream: started","id":"xessa82l"}
+{"time":"2025-03-13T13:34:09.429407697+08:00","level":"INFO","msg":"sender: started","stream_id":"xessa82l"}
+{"time":"2025-03-13T13:34:09.42940199+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xessa82l"}
+{"time":"2025-03-13T13:34:09.429541912+08:00","level":"INFO","msg":"handler: started","stream_id":"xessa82l"}
+{"time":"2025-03-13T13:34:09.438499774+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-13T14:34:47.174568855+08:00","level":"INFO","msg":"stream: closing","id":"xessa82l"}
+{"time":"2025-03-13T14:34:47.174651498+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-13T14:34:47.175856127+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-13T14:34:47.17607833+08:00","level":"INFO","msg":"handler: closed","stream_id":"xessa82l"}
+{"time":"2025-03-13T14:34:47.176098642+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xessa82l"}
+{"time":"2025-03-13T14:34:47.176133346+08:00","level":"INFO","msg":"sender: closed","stream_id":"xessa82l"}
+{"time":"2025-03-13T14:34:47.17634305+08:00","level":"INFO","msg":"stream: closed","id":"xessa82l"}
