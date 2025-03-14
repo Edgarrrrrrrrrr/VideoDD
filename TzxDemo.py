@@ -27,25 +27,37 @@ from loguru import logger
 warnings.filterwarnings("ignore")
 
 # 创建目录保存数据
-save_dir = "tzx-exlogs"
+save_dir = "exp_results"
 os.makedirs(save_dir, exist_ok=True)
-
-# 生成唯一文件名
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
-
-loss_png_path = os.path.join(save_dir, f"loss_curve_{timestamp}.png")
-match_loss_png_path = os.path.join(save_dir, f"match_loss_curve_{timestamp}.png")
-calib_loss_png_path = os.path.join(save_dir, f"calib_loss_curve_{timestamp}.png")
-
-# 记录 loss 变化
-loss_history = []
-match_loss_history = []
-calib_loss_history = []
-
 
 
 def main(args):
+    
+
+    # 假设视频的学习率、init noise 和 IPC 存储在 args 中
+    video_lr = args.lr_video  # 获取视频学习率
+    init_ways = args.init # 获取初始化噪声
+    ipc = args.ipc  # 获取 IPC 值
+    use_samplingnet = args.sampling_net  # 是否使用采样网络
+    use_calib = args.iter_calib  # 是否使用校准
+    
+    
+    use_interp = 0  # 是否使用插值网络去提取特征，0表示每次都是random的，而1表示有插值策略的
+
+    # 生成唯一文件名，包含时间戳、学习率、init_noise、ipc、use_samplingnet、use_calib 和 use_interp
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    loss_png_path = os.path.join(save_dir, f"loss_{timestamp}_loss_curve_lr{video_lr}_noise{init_ways}_ipc{ipc}_sampling{use_samplingnet}_calib{use_calib}_featureNet{use_interp}.png")
+    match_loss_png_path = os.path.join(save_dir, f"match_{timestamp}_match_loss_curve_lr{video_lr}_noise{init_ways}_ipc{ipc}_sampling{use_samplingnet}_calib{use_calib}_featureNet{use_interp}.png")
+    calib_loss_png_path = os.path.join(save_dir, f"calib_{timestamp}_calib_loss_curve_lr{video_lr}_noise{init_ways}_ipc{ipc}_sampling{use_samplingnet}_calib{use_calib}_featureNet{use_interp}.png")
+
+
+    # 记录 loss 变化
+    loss_history = []
+    match_loss_history = []
+    calib_loss_history = []
+
+    
+    
     ####################################
     #######   STEP1 处理数据    #########
     ####################################
@@ -150,6 +162,7 @@ def main(args):
     # syn_lr = syn_lr.detach().to(args.device).requires_grad_(args.train_lr) if args.method == 'MTT' else None
     # optimizer_lr = torch.optim.Adam([syn_lr], lr=args.lr_lr) if args.train_lr else None
     #optimizer_video = torch.optim.Adam([video_syn], lr=args.lr_video) # optimizer_video for synthetic data
+    
     optimizer_video = torch.optim.SGD([video_syn], lr=args.lr_video, momentum=0.9)  # SGD optimizer for synthetic data
     optimizer_video.zero_grad()
 
@@ -241,23 +254,20 @@ def main(args):
                         wandb.log({'Std/{}'.format(model_eval): acc_test_std}, step=it)
                         wandb.log({'Max_Std/{}'.format(model_eval): best_std[model_eval]}, step=it)
 
-
-
             logger.info("这次训练轮数是:"+str(it))
             ###############################################################################################
             ####    Trick 3 插值预训练的model去捕获特征  但与cf实现略有出入 可以做实验  一个想法是去做序列化 ####
             ###############################################################################################
 
             #model_interval = interpolate_models(model_init, model_final, model_interval, a=0, b=1)
-            model_interval = R2Plus1D_Custom(num_classes=num_classes, pretrained=False).to(args.device)
-            model_interval.eval()
-
+            #model_interval = R2Plus1D_Custom(num_classes=num_classes, pretrained=False).to(args.device)
+            #model_interval.eval()
 
             start_time = time.time()  # 记录开始时间
             match_loss_total,match_grad_mean,calib_loss_total,calib_grad_mean=0,0,0,0
             for c in range(0,num_classes):
-                if(c%10==0):
-                    logger.info("现在是第"+str(it)+"次更新syn_video"+",处理第"+str(c)+"类")
+                # if(c%10==0):
+                #     logger.info("现在是第"+str(it)+"次更新syn_video"+",处理第"+str(c)+"类")
                 #每一个类ipc个样本视频
                 class_c_video_syn = video_syn[c*args.ipc:(c+1)*args.ipc].reshape((args.ipc, channel, args.frames, im_size[0], im_size[1]))
                 class_c_video_real = get_videos(c, args.batch_real).detach()
@@ -286,22 +296,17 @@ def main(args):
                     #logger.info("t的shape是:"+str(t.shape))
                 else:
                     t=None
-                #logger.info("计算Loss前video_syn.grad 是否为 None:"+ str(video_syn.grad is None)) 
-                
                 
                 ##########################
                 ###  TO Understand it  ###
                 ##########################
-
-                loss = 30 * cfloss(feat_tg, feat, t,args)
+                loss = 1000 * cfloss(feat_tg, feat, t,args)
                 #loss = 100*torch.sqrt(cf_loss(feat_tg,feat,t=t))
+                #loss = 3000*torch.sum((torch.mean(feat_tg, dim=0) - torch.mean(feat, dim=0))**2)
 
-
-                # logger.info("loss的类型是"+str(type(loss)))
                 # logger.info("Shape of synthetic video features:"+ str(feat.shape))
                 # logger.info("Shape of real video features:"+ str(feat_tg.shape))
                 match_loss_total += loss.item()
-
                 ##############################################################################################################
                 ## To do 更新策略到底有没有效呢 而且我更新synthetic是更新多少呢全部or对应类 (那就涉及到每个c都去更新还是一起更新了) ##
                 ##############################################################################################################
@@ -310,7 +315,6 @@ def main(args):
                     #logger.info("开始更新核心集参数以及对抗网络参数捏")
                     optimizer_sampling_net.zero_grad()
                     loss.backward()
-                    
                     # 反转sampling_net梯度方向
                     for name, param in sampling_net.named_parameters():
                         #print(f"参数 {name} 的梯度:\n", param.grad is None)
@@ -320,6 +324,7 @@ def main(args):
                     optimizer_sampling_net.step()
                 else:
                     loss.backward()
+                    #logger.info("计算Loss前video_syn.grad 是否为 None:"+ str(video_syn.grad is None)) 
                     optimizer_video.step()
 
                 video_syn_grad=video_syn.grad
@@ -328,7 +333,6 @@ def main(args):
                     ######  DONE!!!!! TO DO 这个梯度是干什么呢  研究一下梯度是如何传的  #####
                     #####################################################################
                     match_grad_mean += torch.norm(video_syn_grad).item()
-                    #logger.info("match_grad_mean:"+str(match_grad_mean))
                     
 
 
@@ -373,16 +377,15 @@ def main(args):
             current_loss = (match_loss_total + calib_loss_total) / num_classes if args.iter_calib>0 else (match_loss_total) / num_classes
             print("current_loss是",current_loss)
             
-            loss_history.append(current_loss)  # 直接存 float
+            loss_history.append(current_loss)  
             match_loss_history.append(match_loss_total)
             calib_loss_history.append(calib_loss_total)
 
-            scheduler.step(current_loss)
-            if scheduler_sampling_net is not None:
-                scheduler_sampling_net.step(current_loss)
-            
-
-            
+            ###调整学习率
+            # scheduler.step(current_loss)
+            # if scheduler_sampling_net is not None:
+            #     scheduler_sampling_net.step(current_loss)
+                        
             end_time = time.time()  # 记录开始时间
             #print(f"循环执行时间: {end_time - start_time:.4f} 秒")  # 计算并打印时间
     
@@ -447,7 +450,9 @@ if __name__ == '__main__':
     parser.add_argument('--beta_for_loss',type=float,default=0.5,help='')
     parser.add_argument('--iter_calib',type=int,default=0,help='') 
     parser.add_argument('--calib_weight',type=float,default=1,help='')
-    parser.add_argument('--num_freqs',type=int,default=4096,help='')
+    parser.add_argument('--num_freqs',type=int,default=1024,help='')
+
+    
  
 
 
