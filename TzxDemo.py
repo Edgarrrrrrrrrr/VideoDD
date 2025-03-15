@@ -211,6 +211,8 @@ def main(args):
                     factor=0.5,    
                     patience=500,    
                     verbose=False)
+    
+    
 
 
     #######################################
@@ -220,6 +222,7 @@ def main(args):
         logger.info("Use CF method")
         for it in trange(0, args.Iteration+1):   
 
+            logger.info(f"当前学习率: {optimizer_video.param_groups[0]['lr']}")
             save_this_it = False
             wandb.log({"Progress": it}, step=it)
             #########################
@@ -382,7 +385,7 @@ def main(args):
             calib_loss_history.append(calib_loss_total)
 
             ###调整学习率
-            # scheduler.step(current_loss)
+            scheduler.step(current_loss)
             # if scheduler_sampling_net is not None:
             #     scheduler_sampling_net.step(current_loss)
                         
