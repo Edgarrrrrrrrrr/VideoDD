@@ -1,0 +1,79 @@
+{
+  "os": "Linux-5.15.0-97-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-03-16T09:21:44.271306Z",
+  "args": [
+    "--method",
+    "CF",
+    "--dataset",
+    "HMDB51",
+    "--ipc",
+    "1",
+    "--num_eval",
+    "5",
+    "--epoch_eval_train",
+    "500",
+    "--init",
+    "real",
+    "--lr_video",
+    "20",
+    "--lr_net",
+    "0.01",
+    "--Iteration",
+    "1500",
+    "--model",
+    "ConvNet3D",
+    "--eval_mode",
+    "SS",
+    "--eval_it",
+    "500",
+    "--batch_real",
+    "64",
+    "--num_workers",
+    "4",
+    "--sampling_net",
+    "1",
+    "--iter_calib",
+    "0",
+    "--preload",
+    "--data_path",
+    "/root/autodl-tmp/Data"
+  ],
+  "program": "/root/autodl-tmp/VideoDD/TzxDemo.py",
+  "codePath": "TzxDemo.py",
+  "git": {
+    "remote": "git@github.com:Edgarrrrrrrrrr/VideoDD.git",
+    "commit": "b0b824b932a8635a216077f604527d6a54536250"
+  },
+  "email": "1551846886@qq.com",
+  "root": "/root/autodl-tmp/VideoDD",
+  "host": "autodl-container-e3624c865b-964e9096",
+  "executable": "/root/miniconda3/bin/python",
+  "codePathLocal": "TzxDemo.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 128,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "32212254720",
+      "used": "2035269632"
+    }
+  },
+  "memory": {
+    "total": "1081820225536"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 128
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.6"
+}

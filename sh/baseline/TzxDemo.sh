@@ -14,13 +14,14 @@ CUDA_VISIBLE_DEVICES=${GPU} python TzxDemo.py \
 --init real \
 --lr_video ${LR} \
 --lr_net 0.01 \
---Iteration 5000 \
+--Iteration 1500 \
 --model ConvNet3D \
 --eval_mode SS \
 --eval_it 500 \
 --batch_real 64 \
 --num_workers 4 \
---sampling_net 0 \
+--sampling_net 1 \
 --iter_calib 0 \
 --preload \
 --data_path  "/root/autodl-tmp/Data"
+#--num_eval 5 \

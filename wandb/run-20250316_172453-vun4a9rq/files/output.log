@@ -1,0 +1,36 @@
+[32m2025-03-16 17:24:55.205[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m101[0m - [1mHyper-parameters:
+{'_wandb': {}, 'dataset': 'HMDB51', 'method': 'CF', 'model': 'ConvNet3D', 'data_path': '/root/autodl-tmp/Data', 'Iteration': 1500, 'eval_it': 500, 'eval_mode': 'SS', 'batch_syn': 51, 'ipc': 1, 'frames': 16, 'lr_teacher': 0.001, 'init': 'real', 'lr_video': 20.0, 'sampling_net': 0, 'lr_sampling_net': 0.01, 'alpha_for_loss': 0.5, 'beta_for_loss': 0.5, 'iter_calib': 0, 'calib_weight': 1, 'num_freqs': 1024, 'outer_loop': None, 'inner_loop': None, 'num_eval': 5, 'epoch_eval_train': 500, 'lr_net': 0.01, 'lr_lr': 1e-05, 'train_lr': False, 'batch_real': 64, 'batch_train': 256, 'expert_epochs': 3, 'syn_steps': 64, 'max_start_epoch': 25, 'dis_metric': 'ours', 'buffer_path': None, 'num_workers': 4, 'preload': True, 'save_path': './logged_files', 'device': 'cuda', 'distributed': False}[0m
+[32m2025-03-16 17:24:55.206[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m102[0m - [1mEvaluation model pool: ['ConvNet3D'][0m
+[32m2025-03-16 17:24:55.206[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m106[0m - [1mBUILDING DATASET[0m
+5236it [00:00, 921044.11it/s]
+[32m2025-03-16 17:24:55.396[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m145[0m - [1minitialize synthetic data from random real video[0m
+torch.Size([51, 3, 16, 112, 112])
+[32m2025-03-16 17:24:55.447[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m170[0m - [1mtraining begins[0m
+[32m2025-03-16 17:24:55.447[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m175[0m - [1m蒸馏数据集的尺寸：torch.Size([51, 3, 16, 112, 112])[0m
+[32m2025-03-16 17:24:55.447[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m176[0m - [1m蒸馏数据集标签的尺寸：torch.Size([51])[0m
+[32m2025-03-16 17:24:57.378[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m224[0m - [1mUse CF method[0m
+  0%|                                                                                                                                                  | 0/1501 [00:00<?, ?it/s][32m2025-03-16 17:24:57.379[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:24:57.379[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:0[0m
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+t的shape是:torch.Size([1024, 512])
+  0%|                                                                                                                                                  | 0/1501 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/root/autodl-tmp/VideoDD/TzxDemo.py", line 492, in <module>
+    main(args)
+  File "/root/autodl-tmp/VideoDD/TzxDemo.py", line 314, in main
+    match_loss_total += loss.item()
+                        ^^^^^^^^^^^
+KeyboardInterrupt

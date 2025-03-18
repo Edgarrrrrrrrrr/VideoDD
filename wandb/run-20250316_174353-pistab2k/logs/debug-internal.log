@@ -1,0 +1,15 @@
+{"time":"2025-03-16T17:43:53.86889395+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"/root/autodl-tmp/VideoDD/wandb/run-20250316_174353-pistab2k/logs/debug-core.log"}
+{"time":"2025-03-16T17:43:53.979984181+08:00","level":"INFO","msg":"created new stream","id":"pistab2k"}
+{"time":"2025-03-16T17:43:53.980017897+08:00","level":"INFO","msg":"stream: started","id":"pistab2k"}
+{"time":"2025-03-16T17:43:53.9800657+08:00","level":"INFO","msg":"handler: started","stream_id":"pistab2k"}
+{"time":"2025-03-16T17:43:53.980071097+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"pistab2k"}
+{"time":"2025-03-16T17:43:53.980181936+08:00","level":"INFO","msg":"sender: started","stream_id":"pistab2k"}
+{"time":"2025-03-16T17:43:54.960293768+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-16T17:44:19.180452997+08:00","level":"INFO","msg":"stream: closing","id":"pistab2k"}
+{"time":"2025-03-16T17:44:19.18052906+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-16T17:44:19.181566758+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-16T17:44:20.786703165+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-16T17:44:21.574167119+08:00","level":"INFO","msg":"handler: closed","stream_id":"pistab2k"}
+{"time":"2025-03-16T17:44:21.574246749+08:00","level":"INFO","msg":"sender: closed","stream_id":"pistab2k"}
+{"time":"2025-03-16T17:44:21.574232624+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"pistab2k"}
+{"time":"2025-03-16T17:44:21.574416408+08:00","level":"INFO","msg":"stream: closed","id":"pistab2k"}

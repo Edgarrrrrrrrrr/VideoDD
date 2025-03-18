@@ -1,0 +1,118 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.12.3
+        t:
+            "1":
+                - 1
+                - 41
+                - 55
+            "2":
+                - 1
+                - 41
+                - 55
+            "3":
+                - 13
+                - 16
+                - 23
+                - 55
+                - 61
+            "4": 3.12.3
+            "5": 0.19.8
+            "8":
+                - 5
+            "12": 0.19.8
+            "13": linux-x86_64
+Iteration:
+    value: 1500
+alpha_for_loss:
+    value: 0.5
+batch_real:
+    value: 64
+batch_syn:
+    value: null
+batch_train:
+    value: 256
+beta_for_loss:
+    value: 0.5
+buffer_path:
+    value: null
+calib_weight:
+    value: 1
+data_path:
+    value: /root/autodl-tmp/Data
+dataset:
+    value: HMDB51
+device:
+    value: cuda
+dis_metric:
+    value: ours
+epoch_eval_train:
+    value: 500
+eval_criterion:
+    value: crossentropyloss
+eval_epochs:
+    value: 250
+eval_it:
+    value: 500
+eval_log_path:
+    value: ./logs/eval
+eval_lr:
+    value: 0.01
+eval_lr_scheduler_slices:
+    value: 1
+eval_mode:
+    value: SS
+eval_momentum:
+    value: 0.9
+eval_optimizer:
+    value: sgd
+expert_epochs:
+    value: 3
+frames:
+    value: 16
+init:
+    value: real
+inner_loop:
+    value: null
+ipc:
+    value: 1
+iter_calib:
+    value: 0
+lr_lr:
+    value: 1e-05
+lr_net:
+    value: 0.01
+lr_sampling_net:
+    value: 0.01
+lr_teacher:
+    value: 0.001
+lr_video:
+    value: 20
+max_start_epoch:
+    value: 25
+method:
+    value: CF
+model:
+    value: ConvNet3D
+num_eval:
+    value: 2
+num_freqs:
+    value: 1024
+num_workers:
+    value: 4
+outer_loop:
+    value: null
+preload:
+    value: true
+sampling_net:
+    value: 1
+save_path:
+    value: ./logged_files
+softlabel:
+    value: false
+syn_steps:
+    value: 64
+train_lr:
+    value: false

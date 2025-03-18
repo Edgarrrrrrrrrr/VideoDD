@@ -1,0 +1,86 @@
+[32m2025-03-16 17:13:27.439[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m101[0m - [1mHyper-parameters:
+{'_wandb': {}, 'dataset': 'HMDB51', 'method': 'CF', 'model': 'ConvNet3D', 'data_path': '/root/autodl-tmp/Data', 'Iteration': 1500, 'eval_it': 500, 'eval_mode': 'SS', 'batch_syn': 51, 'ipc': 1, 'frames': 16, 'lr_teacher': 0.001, 'init': 'real', 'lr_video': 20.0, 'sampling_net': 1, 'lr_sampling_net': 0.01, 'alpha_for_loss': 0.5, 'beta_for_loss': 0.5, 'iter_calib': 0, 'calib_weight': 1, 'num_freqs': 1024, 'outer_loop': None, 'inner_loop': None, 'num_eval': 5, 'epoch_eval_train': 500, 'lr_net': 0.01, 'lr_lr': 1e-05, 'train_lr': False, 'batch_real': 64, 'batch_train': 256, 'expert_epochs': 3, 'syn_steps': 64, 'max_start_epoch': 25, 'dis_metric': 'ours', 'buffer_path': None, 'num_workers': 4, 'preload': True, 'save_path': './logged_files', 'device': 'cuda', 'distributed': False}[0m
+[32m2025-03-16 17:13:27.439[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m102[0m - [1mEvaluation model pool: ['ConvNet3D'][0m
+[32m2025-03-16 17:13:27.439[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m106[0m - [1mBUILDING DATASET[0m
+5236it [00:00, 1153736.58it/s]
+[32m2025-03-16 17:13:27.599[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m145[0m - [1minitialize synthetic data from random real video[0m
+torch.Size([51, 3, 16, 112, 112])
+[32m2025-03-16 17:13:27.636[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m170[0m - [1mtraining begins[0m
+[32m2025-03-16 17:13:27.636[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m175[0m - [1m蒸馏数据集的尺寸：torch.Size([51, 3, 16, 112, 112])[0m
+[32m2025-03-16 17:13:27.637[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m176[0m - [1m蒸馏数据集标签的尺寸：torch.Size([51])[0m
+[32m2025-03-16 17:13:29.225[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m190[0m - [1muse the sampling_net[0m
+[32m2025-03-16 17:13:29.233[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m224[0m - [1mUse CF method[0m
+  0%|                                                                                                                                                  | 0/1501 [00:00<?, ?it/s][32m2025-03-16 17:13:29.234[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:13:29.234[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:0[0m
+match_loss_total是 5474.810194969177
+calib_loss_total是 0
+current_loss是 107.34921950919956
+  0%|                                                                                                                                        | 1/1501 [00:18<7:33:07, 18.13s/it][32m2025-03-16 17:13:47.359[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:13:47.360[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:1[0m
+match_loss_total是 33000.862968444824
+calib_loss_total是 0
+current_loss是 647.0757444793103
+  0%|▏                                                                                                                                       | 2/1501 [00:36<7:30:32, 18.03s/it][32m2025-03-16 17:14:05.330[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:14:05.330[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:2[0m
+match_loss_total是 23435.100910186768
+calib_loss_total是 0
+current_loss是 459.5117825526817
+  0%|▎                                                                                                                                       | 3/1501 [00:53<7:26:01, 17.86s/it][32m2025-03-16 17:14:22.993[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:14:22.993[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:3[0m
+match_loss_total是 34616.64712524414
+calib_loss_total是 0
+current_loss是 678.757786769493
+  0%|▎                                                                                                                                       | 4/1501 [01:11<7:23:54, 17.79s/it][32m2025-03-16 17:14:40.673[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:14:40.673[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:4[0m
+match_loss_total是 24632.009838104248
+calib_loss_total是 0
+current_loss是 482.9805850608676
+  0%|▍                                                                                                                                       | 5/1501 [01:29<7:22:35, 17.75s/it][32m2025-03-16 17:14:58.352[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:14:58.353[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:5[0m
+match_loss_total是 21271.608402252197
+calib_loss_total是 0
+current_loss是 417.09036082847445
+  0%|▌                                                                                                                                       | 6/1501 [01:47<7:24:34, 17.84s/it][32m2025-03-16 17:15:16.372[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:15:16.373[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:6[0m
+match_loss_total是 24605.8309173584
+calib_loss_total是 0
+current_loss是 482.46727288938035
+  0%|▋                                                                                                                                       | 7/1501 [02:04<7:21:50, 17.74s/it][32m2025-03-16 17:15:33.914[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:15:33.914[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:7[0m
+match_loss_total是 18772.342212677002
+calib_loss_total是 0
+current_loss是 368.08514142503924
+  1%|▋                                                                                                                                       | 8/1501 [02:22<7:23:29, 17.82s/it][32m2025-03-16 17:15:51.905[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:15:51.906[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:8[0m
+match_loss_total是 22809.015731811523
+calib_loss_total是 0
+current_loss是 447.23560258453966
+  1%|▊                                                                                                                                       | 9/1501 [02:40<7:22:48, 17.81s/it][32m2025-03-16 17:16:09.678[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:16:09.679[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:9[0m
+match_loss_total是 23911.640129089355
+calib_loss_total是 0
+current_loss是 468.85568880567365
+  1%|▉                                                                                                                                      | 10/1501 [02:58<7:25:29, 17.93s/it][32m2025-03-16 17:16:27.875[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:16:27.876[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:10[0m
+match_loss_total是 19885.15203857422
+calib_loss_total是 0
+current_loss是 389.9049419328278
+  1%|▉                                                                                                                                      | 11/1501 [03:16<7:23:32, 17.86s/it][32m2025-03-16 17:16:45.585[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-16 17:16:45.585[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m262[0m - [1m这次训练轮数是:11[0m
+  1%|▉                                                                                                                                      | 11/1501 [03:31<7:56:38, 19.19s/it]
+Traceback (most recent call last):
+  File "/root/autodl-tmp/VideoDD/TzxDemo.py", line 492, in <module>
+    main(args)
+  File "/root/autodl-tmp/VideoDD/TzxDemo.py", line 299, in main
+    t=sampling_net(args.device)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/VideoDD/utils.py", line 1475, in forward
+    self._t_net_input = self._t_net_input.to(device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

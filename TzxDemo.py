@@ -189,7 +189,7 @@ def main(args):
     if args.sampling_net:
         logger.info("use the sampling_net")
         ####这里的feature_dim是特征提取网络提取的feature维度
-        sampling_net=SampleNet(feature_dim=512).to(args.device)
+        sampling_net=SampleNet(feature_dim=512,t_batchsize=args.num_freqs).to(args.device)
          # 定义优化器
         optimizer_sampling_net = torch.optim.SGD(sampling_net.parameters(), lr=args.lr_sampling_net)
         # 定义学习率调度器
@@ -205,12 +205,14 @@ def main(args):
         optimizer_sampling_net=None
         scheduler_sampling_net=None
 
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-                    optimizer_video,
-                    mode='min',
-                    factor=0.5,    
-                    patience=500,    
-                    verbose=False)
+    scheduler = torch.optim.lr_scheduler.MultiStepLR(
+        optimizer_video, 
+        milestones=[args.Iteration // 20, 
+                    3 * args.Iteration // 20, 
+                    5 * args.Iteration // 20, 
+                    7 * args.Iteration // 20], 
+        gamma=0.5
+    )
     
     
 
@@ -228,7 +230,7 @@ def main(args):
             #########################
             ######   TO DO 评估  ####
             #########################
-            if it==10000:
+            if it % 200 == 0 and it > 0:
                 eval_video_syn = video_syn.clone().permute(0, 2, 1, 3, 4).contiguous().detach()
                 for model_eval in model_eval_pool:
                         logger.info('Evaluation model_train = %s, model_eval = %s, iteration = %d'%(args.model, model_eval, it))
@@ -385,7 +387,8 @@ def main(args):
             calib_loss_history.append(calib_loss_total)
 
             ###调整学习率
-            scheduler.step(current_loss)
+            scheduler.step()
+            #scheduler.step(current_loss)
             # if scheduler_sampling_net is not None:
             #     scheduler_sampling_net.step(current_loss)
                         
@@ -456,7 +459,16 @@ if __name__ == '__main__':
     parser.add_argument('--num_freqs',type=int,default=1024,help='')
 
     
- 
+    #新增参数：用于evaluate_eval
+    parser.add_argument('--softlabel', type=bool, default=False, help='use softlabel to evaluate')
+    parser.add_argument('--eval_log_path', type=str, default='./logs/eval', help='path to save eval logs' )
+    parser.add_argument('--eval_criterion', type=str, default='crossentropyloss', help='the loss function that eval use')
+    parser.add_argument('--eval_optimizer', type=str, default='sgd', help='optimizer that eval use')
+    parser.add_argument('--eval_lr', type=float, default=1e-2, help='eval net learning rate')
+    parser.add_argument('--eval_momentum', type=float, default=0.9, help='eval net momentum')
+    parser.add_argument('--eval_lr_scheduler_slices', type=int, default=1, help="1 or 5 steps to lower lr")
+    parser.add_argument('--eval_epochs', type=int, default=250, help='eval epochs')
+
 
 
   

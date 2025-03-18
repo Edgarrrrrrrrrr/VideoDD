@@ -1,0 +1,55 @@
+[32m2025-03-15 22:30:01.669[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m101[0m - [1mHyper-parameters:
+{'_wandb': {}, 'dataset': 'HMDB51', 'method': 'CF', 'model': 'ConvNet3D', 'data_path': '/root/autodl-tmp/Data', 'Iteration': 10, 'eval_it': 500, 'eval_mode': 'SS', 'batch_syn': 51, 'ipc': 1, 'frames': 16, 'lr_teacher': 0.001, 'init': 'real', 'lr_video': 20.0, 'sampling_net': 0, 'lr_sampling_net': 0.01, 'alpha_for_loss': 0.5, 'beta_for_loss': 0.5, 'iter_calib': 0, 'calib_weight': 1, 'num_freqs': 1024, 'outer_loop': None, 'inner_loop': None, 'num_eval': 5, 'epoch_eval_train': 500, 'lr_net': 0.01, 'lr_lr': 1e-05, 'train_lr': False, 'batch_real': 64, 'batch_train': 256, 'expert_epochs': 3, 'syn_steps': 64, 'max_start_epoch': 25, 'dis_metric': 'ours', 'buffer_path': None, 'num_workers': 4, 'preload': True, 'save_path': './logged_files', 'device': 'cuda', 'distributed': False}[0m
+[32m2025-03-15 22:30:01.669[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m102[0m - [1mEvaluation model pool: ['ConvNet3D'][0m
+[32m2025-03-15 22:30:01.669[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m106[0m - [1mBUILDING DATASET[0m
+5236it [00:00, 933176.50it/s]
+[32m2025-03-15 22:30:01.848[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m145[0m - [1minitialize synthetic data from random real video[0m
+torch.Size([51, 3, 16, 112, 112])
+[32m2025-03-15 22:30:01.895[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m170[0m - [1mtraining begins[0m
+[32m2025-03-15 22:30:01.895[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m175[0m - [1m蒸馏数据集的尺寸：torch.Size([51, 3, 16, 112, 112])[0m
+[32m2025-03-15 22:30:01.895[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m176[0m - [1m蒸馏数据集标签的尺寸：torch.Size([51])[0m
+[32m2025-03-15 22:30:03.641[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m224[0m - [1mUse CF method[0m
+  0%|                                                                                                                                                    | 0/11 [00:00<?, ?it/s][32m2025-03-15 22:30:03.642[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m227[0m - [1m当前学习率: 20.0[0m
+[32m2025-03-15 22:30:03.649[0m | [1mINFO    [0m | [36m__main__[0m:[36mmain[0m:[36m236[0m - [1mEvaluation model_train = ConvNet3D, model_eval = ConvNet3D, iteration = 0[0m
+start ep
+ 40%|██████████████████████████████████████████████████████▋                                                                                  | 200/501 [01:44<02:36,  1.92it/s]
+  0%|                                                                                                                                                    | 0/11 [01:44<?, ?it/s]
+[2025-03-15 22:31:01] Evaluate_00: Ep 100 time = 57s loss = 0.263012 train acc = 92.16, test acc = 2.68
+Traceback (most recent call last):
+  File "/root/autodl-tmp/VideoDD/TzxDemo.py", line 492, in <module>
+    main(args)
+  File "/root/autodl-tmp/VideoDD/TzxDemo.py", line 242, in main
+    _, acc_train, acc_test, acc_per_cls = evaluate_synset(it_eval, net_eval, image_syn_eval, label_syn_eval, testloader, args, mode='none',test_freq=100)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/VideoDD/utils.py", line 1074, in evaluate_synset
+    loss_test, acc_test, acc_per= epoch('test', testloader, net, optimizer, criterion, args)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/VideoDD/utils.py", line 946, in epoch
+    for i_batch, datum in enumerate(dataloader):
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/root/autodl-tmp/VideoDD/distill_utils/dataset.py", line 340, in __getitem__
+    X = self.read_images(
+        ^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/VideoDD/distill_utils/dataset.py", line 313, in read_images
+    image = transforms.functional.hflip(image)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torchvision/transforms/functional.py", line 660, in hflip
+    return F_pil.hflip(img)
+           ^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torchvision/transforms/_functional_pil.py", line 56, in hflip
+    return img.transpose(Image.FLIP_LEFT_RIGHT)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/PIL/Image.py", line 2840, in transpose
+    self.load()
+  File "/root/miniconda3/lib/python3.12/site-packages/PIL/ImageFile.py", line 291, in load
+    n, err_code = decoder.decode(b)
+                  ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -54,6 +54,7 @@ class CFLossFunc(nn.Module):
         # Generate random frequencies
         if t is None:
             t = torch.randn((args.num_freqs, feat.size(1)), device=feat.device)
+            #print("t的shape是:"+str(t.shape))
         t_x_real = calculate_real(torch.matmul(t, feat.t()))
         t_x_imag = calculate_imag(torch.matmul(t, feat.t()))
         t_x_norm = calculate_norm(t_x_real, t_x_imag)

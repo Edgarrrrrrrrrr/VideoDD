@@ -1435,13 +1435,12 @@ class SampleNet(nn.Module):
     TNet module for adversarial networks with fixed activation layers and predefined parameters.
     """
 
-  
     def __init__(self, feature_dim=64, t_batchsize=64, t_var=1):
         super(SampleNet, self).__init__()
         self.feature_dim = feature_dim  # Feature dimension
-        ######################
-        #####     Q1    ######
-        ######################
+        #####################
+        #####     Q1    #####
+        #####################
         self.t_sigma_num = t_batchsize // 16  # Number of sigmas for t_net
         self._input_adv_t_net_dim = feature_dim  # Input noise dimension
         self._input_t_dim = feature_dim  # t_net input dimension
