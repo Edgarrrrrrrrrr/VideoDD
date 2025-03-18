@@ -1,1 +1,0 @@
-from .evaluate_remake import evaluate_synset_ours
